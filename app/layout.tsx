@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 const kenaoSansSerif = localFont({
-  src: "./fonts/kenao.otf",
+  src: "./fonts/Kenao.otf",
   variable: "--font-kenao-sans-serif",
 });
 
@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="m-0 p-0">
+    <html lang="fr" className="m-0 p-0">
       <body
         className={`${garetFont.variable} ${geistSans.variable} ${geistMono.variable} ${kenaoSansSerif.variable} antialiased m-0 p-0 font-garet`}
       >
