@@ -6,15 +6,37 @@
 
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Garet';
+  src: url('./fonts/Garet.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   margin: 0 !important;
   padding: 0 !important;
   width: 100%;
   height: 100%;
-
+  font-family: 'Garet', sans-serif;
 }
 
 main {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
 }
